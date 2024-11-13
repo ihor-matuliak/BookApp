@@ -1,0 +1,42 @@
+:host {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--grey);
+}
+
+.search-bar {
+  width: 40%;
+}
+
+.nav-link {
+  color: var(--black);
+}
+
+.new-book-button {
+  display: flex;
+  align-items: center;
+  background-color: var(--darker-grey);
+  color: var(--white);
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.new-book-button{
+  &:hover {
+    background-color: var(--grey-400);
+  }
+
+  &[disabled] {
+    background-color: var(--darker-grey);
+    border-color: var(--border-color-button);
+  }
+}
